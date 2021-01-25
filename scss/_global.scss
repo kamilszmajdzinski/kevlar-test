@@ -61,6 +61,15 @@ section {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.shadow {
+  text-shadow: 4px 0px 11px rgba(0, 0, 0, 1);
+}
+
+.services {
+  padding: 4rem 0;
+  font-size: 1.5rem;
+}
+
 ::-moz-selection {
   color: $white;
   background: $gray-900;
@@ -179,9 +188,9 @@ img::-moz-selection {
   background-color: $prussianBlue;
   height: 6em;
   display: flex;
-justify-content: center;
 border-top: 2px solid $richBlack;
 align-items: center;
+  padding-left: 16px;
  
 i {
   color: white;

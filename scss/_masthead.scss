@@ -1,10 +1,10 @@
 // Styling for the masthead
 header.masthead {
-  padding-top: 10rem;
+  padding-top: 18rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=281dd3518c2edb68c31b19bbcb624a0f&auto=format&fit=crop&w=1350&q=80');
+  background-image: url('https://images.unsplash.com/photo-1586704340969-0c0d708e464e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80');
   //background-image: url('../img/header.jpg');
-  
+
   background-position: center center;
   @include background-cover;
   
@@ -27,7 +27,7 @@ header.masthead {
   }
 
   #frontEnd{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
    
   }
 
@@ -38,7 +38,7 @@ header.masthead {
     padding-bottom: 20px;
   }
   h1 {
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     font-family: 'Nunito Sans', sans-serif;
     
   }

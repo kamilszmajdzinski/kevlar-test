@@ -61,6 +61,15 @@ section {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.shadow {
+  text-shadow: 4px 0px 11px black;
+}
+
+.services {
+  padding: 4rem 0;
+  font-size: 1.5rem;
+}
+
 ::-moz-selection {
   color: #fff;
   background: #212529;
@@ -174,9 +183,9 @@ img::-moz-selection {
   background-color: #003459;
   height: 6em;
   display: flex;
-  justify-content: center;
   border-top: 2px solid #00171F;
   align-items: center;
+  padding-left: 16px;
 }
 
 .footer i {
@@ -201,7 +210,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  width: 10%;
+  width: 15%;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -234,7 +243,7 @@ img::-moz-selection {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    width: 5%;
+    width: 10%;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     padding: 0.5rem 1rem;
@@ -268,9 +277,9 @@ img::-moz-selection {
 }
 
 header.masthead {
-  padding-top: 10rem;
+  padding-top: 18rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=281dd3518c2edb68c31b19bbcb624a0f&auto=format&fit=crop&w=1350&q=80");
+  background-image: url("https://images.unsplash.com/photo-1586704340969-0c0d708e464e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -294,7 +303,7 @@ header.masthead .fa {
 }
 
 header.masthead #frontEnd {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 header.masthead .fa:hover {
@@ -306,7 +315,7 @@ header.masthead #front {
 }
 
 header.masthead h1 {
-  font-size: 2.3rem;
+  font-size: 1.7rem;
   font-family: 'Nunito Sans', sans-serif;
 }
 
