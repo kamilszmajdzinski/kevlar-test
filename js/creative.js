@@ -27,17 +27,37 @@
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
-    }
-  };
-  // Collapse now if page is not at top
-  navbarCollapse();
-  // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);
+  if ($("#mainNav").offset()) {
+    var navbarCollapse = function() {
+      debugger
+      if ($("#mainNav").offset().top > 100) {
+        $("#mainNav").addClass("navbar-shrink");
+      } else {
+        $("#mainNav").removeClass("navbar-shrink");
+      }
+    };
+    // Collapse now if page is not at top
+    navbarCollapse();
+    // Collapse the navbar when page is scrolled
+    $(window).scroll(navbarCollapse);
+  } else {
+  // Collapse Navbar
+    var secondaryNavbarCollapse = function() {
+      console.log($("#secondaryNav"))
+      if ($("#secondaryNav").offset().top > 100) {
+        console.log('elo')
+        $("#secondaryNav").addClass("navbar-shrink");
+      } else {
+        $("#secondaryNav").removeClass("navbar-shrink");
+      }
+    };
+    // Collapse now if page is not at top
+    secondaryNavbarCollapse();
+    // Collapse the navbar when page is scrolled
+    $(window).scroll(secondaryNavbarCollapse);
+  }
+
+
 
   // Scroll reveal calls
   window.sr = ScrollReveal();

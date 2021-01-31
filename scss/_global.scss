@@ -38,7 +38,9 @@ a {
   }
 }
 
-
+.aboutUs {
+  margin-top: 40px;
+}
 
 .bg-primary {
   background-color: $prussianBlue !important;
@@ -171,6 +173,19 @@ img::-moz-selection {
 .contactContainer{
   display: flex;
 }
+
+.contactContainer.smallIcon {
+  a {
+    color: white;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .fa {
+    font-size: 40px;
+    padding-right: 0px;
+  }
+}
   .icon{
    text-align: center;
    margin: 0 auto;
@@ -186,25 +201,105 @@ img::-moz-selection {
 
 .footer {
   background-color: $prussianBlue;
-  height: 6em;
+  height: 9em;
   display: flex;
-border-top: 2px solid $richBlack;
-align-items: center;
+  border-top: 2px solid $richBlack;
+  align-items: center;
   padding-left: 16px;
- 
-i {
   color: white;
-  margin-left: 3em;
-  font-size:3em;
+  font-size: 1rem;
+  box-shadow: 10px 10px 17px 11px rgba(0,0,0,0.75);
+
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .footerCaption {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+  }
+
+  img{
+    display: none;
+  }
+  @media (min-width: 992px) {
+    img {
+      display: inline;
+      align-self: center;
+      height: 6em;
+    }
+
+    .footerContent {
+      display: flex;
+      justify-content: space-between;
+    }
+    .footerCaption {
+      text-align: left;
+    }
+  }
 }
 
-
-
-
-img{
-  align-self: center;
-  height: 4em;
-  margin-right: 2em;
+.cardCustom {
+  padding: 24px;
+  -webkit-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.75);
+  @media (min-width: 992px) {
+    padding: 46px;
+  }
 }
 
+header.masthead {
+  .cardCustom {
+    p {
+        font-size: 1rem;
+    }
+  }
+}
+
+#contactPar {
+  font-size: 1rem;
+}
+
+#contactPar2 {
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#googleMaps {
+  padding: 0;
+  height: 400px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.boxShadow {
+  box-shadow: 3px -5px 22px 0px rgba(0,0,0,0.75);
+}
+
+.achievementCard {
+  padding: 46px;
+  margin-top: 16px;
+  background-color: $prussianBlue;
+  color: white;
+}
+
+#lastAchievement {
+  margin-bottom: 16px;
 }
