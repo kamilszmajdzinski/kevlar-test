@@ -232,6 +232,8 @@ img::-moz-selection {
   .footer .footerContent {
     display: flex;
     justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .footer .footerCaption {
     text-align: left;
@@ -302,6 +304,10 @@ header.masthead .cardCustom p {
   margin-bottom: 16px;
 }
 
+#five {
+  text-align: center;
+}
+
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
@@ -318,6 +324,10 @@ header.masthead .cardCustom p {
 
 #mainNav .navbar-brand {
   width: 100%;
+}
+
+#mainNav .hideBrand {
+  display: none;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,

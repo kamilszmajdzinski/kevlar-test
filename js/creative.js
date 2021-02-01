@@ -29,11 +29,17 @@
   // Collapse Navbar
   if ($("#mainNav").offset()) {
     var navbarCollapse = function() {
-      debugger
       if ($("#mainNav").offset().top > 100) {
         $("#mainNav").addClass("navbar-shrink");
+        $("#mainNavLogo").removeClass('hideBrand');
+        $("#mainNavLogo").addClass('navbar-brand-link');
       } else {
         $("#mainNav").removeClass("navbar-shrink");
+        if (window.innerWidth > 990) {
+          $("#mainNavLogo").addClass('hideBrand');
+          $("#mainNavLogo").addClass('navbar-brand-link');
+        }
+        $("#mainNavLogo").addClass('navbar-brand-link');
       }
     };
     // Collapse now if page is not at top
